@@ -35,7 +35,10 @@ public class factorial {
 
 		// int f  = recursiveFactorial(n);
 		
+		int r = recursiveSum(n);
+		
 		System.out.println("The factorial of "+ n + " is " + f + ".");
+		System.out.println("The sum of 1 through "+ n + " is "+ r + ".");
 
 	}
 	
@@ -66,8 +69,26 @@ public class factorial {
 	 * @return	the factorial of n
 	 */
 	private static int recursiveFactorial(int n)  {
+		if (n == 1) {
+			return 1;
+		}
 		
-		return 0; // dummy return so file compiles, replace when writing method	
+		return n = recursiveFactorial(n-1);	
+	}
+
+	/**
+	 * recursiveSum
+	 * 		recursively computers the sum of 1 through n
+	 *
+	 * @param n - the number to find the sum from 1 up to.
+	 * @return the sum of 1 through n
+	 */
+	public static int recursiveSum(int n){
+		if (n == 1) {
+			return 1;
+		}
+
+		return n = recursiveSum(n-1);
 	}
 
 	
