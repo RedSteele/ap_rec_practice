@@ -48,6 +48,19 @@ public class fibonacci {
 	 * @param n - the number of fibonacci numbers to find. must be non-negative.
 	 */
 	public static void iterativeFibonacci(int n) {
+		System.out.println(1);
+		System.out.println(1);
+		int num1 = 1;
+		int num2 = 1;
+		int returnNum = 0;
+		for(int i=2; i<n; i++){
+			returnNum = num1+num2;
+			System.out.println(returnNum);
+			if(i!=n-1) {
+				num1 = num2;
+				num2 = returnNum;
+			}
+		}
 
 	}
 
@@ -57,8 +70,8 @@ public class fibonacci {
 	 * 
 	 * @param n - the number of fibonacci numbers to find. must be non-negative.
 	 */
-	public static void recursiveFibonacci(int n) {
+	/*public static void recursiveFibonacci(int n) {
 
-	}
+	}*/
 
 }
